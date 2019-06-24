@@ -1,0 +1,19 @@
+[package]
+name = "gps-tracker"
+version = "0.1.0"
+authors = ["Jamie Blondin <jblondin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+mongodb = { features = ["ssl"], version = "0.3" }
+chrono = "0.4"
+google_geocoding = "0.1"
+
+[dependencies.rocket_contrib]
+version = "0.4.1"
+default-features = false
+features = ["json"]
